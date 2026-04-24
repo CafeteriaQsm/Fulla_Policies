@@ -2,11 +2,48 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>حذف الحساب - Fulla</title>
+<style>
+:root{--orange:#ff7900;--orange-light:#fff1e3;--bg:#fff7f1;--text:#222;--muted:#666;--border:#ffd2ad;--red:#d93025}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#fff);color:var(--text);line-height:1.9}
+header{background:var(--orange);color:white;padding:38px 20px;text-align:center}
+header h1{margin:0;font-size:34px}
+header p{margin:8px 0 0}
+nav{background:white;border-bottom:1px solid var(--border);padding:12px;text-align:center}
+nav a{color:var(--orange);text-decoration:none;font-weight:bold;margin:0 8px}
+main{max-width:900px;margin:30px auto;padding:0 18px}
+.card{background:white;border:1px solid var(--border);border-radius:20px;padding:28px;box-shadow:0 10px 30px rgba(255,121,0,.12)}
+h2,h3{color:var(--orange)}
+ul{background:var(--orange-light);border-radius:14px;padding:18px 34px}
+.warning{border:1px solid #f4b4ad;background:#fff0ee;border-radius:14px;padding:16px;color:#7a1b14}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+.btn{padding:12px 20px;border-radius:12px;font-weight:bold}
+.confirm{background:var(--red);color:white}
+.cancel{background:#eee;color:#333}
+strong{color:var(--orange)}
+footer{text-align:center;color:var(--muted);padding:25px;font-size:14px}
+</style>
 </head>
-<body style="font-family:Arial; padding:20px; line-height:1.8">
+<body>
 
-<h1>حذف الحساب</h1>
+<header>
+  <h1>Fulla</h1>
+  <p>حذف الحساب</p>
+</header>
+
+<nav>
+  <a href="index.html">الرئيسية</a>
+  <a href="privacy.html">الخصوصية</a>
+  <a href="terms.html">الشروط</a>
+  <a href="contact.html">تواصل معنا</a>
+</nav>
+
+<main>
+<div class="card">
+
+<h2>حذف الحساب</h2>
 
 <p>يمكنك حذف حسابك وبياناتك في أي وقت من داخل التطبيق من خلال صفحة الإعدادات.</p>
 
@@ -22,11 +59,26 @@
 
 <p>قد تستغرق عملية الحذف بعض الوقت لإكمالها.</p>
 
-<h3>تأكيد الحذف</h3>
+<h3>نص نافذة التأكيد داخل التطبيق</h3>
+
+<div class="warning">
+  <p><strong>حذف الحساب</strong></p>
+  <p>هل أنت متأكد؟</p>
+  <p>سيتم حذف جميع بياناتك.</p>
+  <div class="buttons">
+    <span class="btn confirm">تأكيد</span>
+    <span class="btn cancel">إلغاء</span>
+  </div>
+</div>
 
 <p>بمتابعة عملية الحذف، فإنك تقر بأن هذا الإجراء نهائي ولا يمكن التراجع عنه.</p>
 
-<p><strong>هل أنت متأكد؟ سيتم حذف جميع بياناتك.</strong></p>
+<p>للمتابعة، يرجى تأكيد طلب حذف الحساب من داخل التطبيق من خلال زر <strong>حذف الحساب</strong>.</p>
+
+</div>
+</main>
+
+<footer>© 2026 Fulla. جميع الحقوق محفوظة.</footer>
 
 </body>
 </html>
